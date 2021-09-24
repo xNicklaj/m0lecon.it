@@ -14,6 +14,7 @@
 
 :root{
   --background-accent-color: rgba(52, 103, 81, .25);
+  --page-background-color: #161616;
   --text-accent-color: rgb(52, 103, 81);
   --link-accent-color: #f6ba5a;
   --secondary-accent-color: #C84B31;
@@ -32,7 +33,7 @@
 }
 
 body{
-  background: #161616;
+  background: var(--page-background-color);
   margin: 0;
   font-family: 'Aller', sans-serif;
   overflow-x: hidden;
@@ -302,15 +303,16 @@ h2{
     width: 0px;
     height: 1em;
   }
-
+  /*
   .navbar:hover > ul > li > a span:nth-child(2){
     visibility: visible;
     opacity: 1;
     width: auto;
     margin-right: 1rem;
   }
+  */
 
-  /*
+  
   .navbar .menu-item:hover a .entry-label{
     display: inline-block;
     position: absolute;
@@ -319,7 +321,6 @@ h2{
     visibility: visible;
     opacity: 1;
     min-width: 10rem;
-    color: var(--text-accent-color);
     background: var(--menu-background-color);
     padding: 8px;
     border-radius: 0 8px 8px 0;
@@ -331,19 +332,19 @@ h2{
   }
 
   .navbar .menu-item:hover a[href="#CTF"] .entry-label{
-    min-width: 4rem;
+    min-width: 3rem;
   }
+  .navbar .menu-item:hover a[href="#about-us"] .entry-label{
+    min-width: 7.5rem;
+  } 
 
   .navbar .menu-item:hover a[href="#partners"] .entry-label{
     min-width: 11rem;
-  }
-  */
+  } 
 
-  .external{
-    border: 0px;
-    border-left: 4px;
-    border-style: solid;
-  }
+  .navbar .menu-item:hover a[href="#about-us"] .entry-label{
+    min-width: 7.5rem;
+  } 
 
   .container > p{
     width: 70%;
