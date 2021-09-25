@@ -1,24 +1,13 @@
 @import url('http://fonts.cdnfonts.com/css/aller');
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 :root{
   --background-accent-color: rgba(52, 103, 81, .25);
+  --lighten-background: rgba(255,255,255,.045);
   --page-background-color: #161616;
   --text-accent-color: rgb(52, 103, 81);
   --link-accent-color: #f6ba5a;
   --secondary-accent-color: #C84B31;
-  --menu-background-color: rgba(15,15,15,.8);
+  --menu-background-color: rgba(15,15,15,1);
   --inset-box-shadow-01: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
@@ -194,7 +183,7 @@ h2{
 
 #cfp{
   color: white;
-  background-color: transparent;
+  background-color: var(--lighten-background);
 }
 
 #about-us{
@@ -208,6 +197,7 @@ h2{
 
 #partners{
   color: white;
+  background-color: var(--lighten-background);
 }
 
 #partners > div > ul > li > a > img {
