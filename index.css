@@ -320,6 +320,7 @@ h2{
     width: auto;
     background: var(--menu-background-color);
     padding: 8px;
+    transform: translateY(-.5rem);
     border-radius: 0 8px 8px 0;
   }
 
