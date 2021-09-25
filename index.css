@@ -314,33 +314,14 @@ h2{
     position: absolute;
     left: 6rem;
     text-align: start;
+    white-space: nowrap;
     visibility: visible;
     opacity: 1;
-    min-width: 10rem;
+    width: auto;
     background: var(--menu-background-color);
     padding: 8px;
     border-radius: 0 8px 8px 0;
-    transform: translateY(-.5rem);
   }
-
-  .navbar .menu-item:hover a[href="#cfp"] .entry-label{
-    min-width: 18rem;
-  }
-
-  .navbar .menu-item:hover a[href="#CTF"] .entry-label{
-    min-width: 3rem;
-  }
-  .navbar .menu-item:hover a[href="#about-us"] .entry-label{
-    min-width: 7.5rem;
-  } 
-
-  .navbar .menu-item:hover a[href="#partners"] .entry-label{
-    min-width: 11rem;
-  } 
-
-  .navbar .menu-item:hover a[href="#about-us"] .entry-label{
-    min-width: 7.5rem;
-  } 
 
   .container > p{
     width: 70%;
