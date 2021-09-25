@@ -1,4 +1,10 @@
-@import url('http://fonts.cdnfonts.com/css/aller');
+@font-face{
+  font-family: "Aller";
+  src: url('static/fonts/Aller-400.woff') format(woff),
+       url('static/fonts/Aller-400.ttf') format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
 
 :root{
   --background-accent-color: rgba(52, 103, 81, .25);
