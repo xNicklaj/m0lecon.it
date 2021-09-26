@@ -418,6 +418,12 @@ h2{
   }
 }
 
+@media screen and (max-width: 350px){
+  .menu-item{
+    font-size: 14px;
+  }
+}
+
 @media screen and (prefers-color-scheme: dark){
 
 }
