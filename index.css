@@ -385,6 +385,7 @@ h2{
     width:100vw;
     height: 100vh;
     padding: 15px;
+
   }
 
   .navbar > i{
@@ -409,6 +410,7 @@ h2{
     visibility: visible;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
   }
   
   .split-view{
