@@ -52,6 +52,8 @@ h2{
   text-align: center;
 }
 
+/* Page */
+
 .navbar ul{
   list-style: none;
   flex-wrap: wrap;
@@ -132,7 +134,7 @@ h2{
 
 .split-view{
   background-color: var(--background-accent-color);
-  box-shadow: var(--inset-box-shadow-01);
+  /*box-shadow: var(--inset-box-shadow-01);*/
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -176,21 +178,22 @@ h2{
 }
 
 #CTF{ 
-  background: var(--background-accent-color);
+  background-color: var(--lighten-background);
 }
 
 #conference{
   color: white;
   padding: .5rem;
-  background: var(--background-accent-color);
+  background-color: var(--lighten-background);
 }
 
 #cfp{
   color: white;
-  background-color: var(--lighten-background);
+  background: var(--background-accent-color);
 }
 
 #about-us{
+  width: 100%;
   margin-top: .5rem;
   padding: .5rem;
   padding-top: 0rem;
@@ -201,7 +204,7 @@ h2{
 
 #partners{
   color: white;
-  background-color: var(--lighten-background);
+  background-color: rgba(52, 103, 81, .65);
 }
 
 #partners > div > ul > li > a > img {
@@ -430,4 +433,12 @@ h2{
 
 @media screen and (prefers-color-scheme: light){
 
+}
+
+/* https://blog.avada.io/css/dividers/#responsive-skewed-page-dividers-(using-css-gradients)-chilli-con-code */
+.skew-cc{
+  width:100%;
+  height:100px;
+  background: linear-gradient(to right bottom, var(--lighten-background) 49%, rgba(52, 103, 81, .5) 50%)/*,    linear-gradient(-50deg, rgba(52, 103, 81, .5) 16px, #000 0)*/;
+  padding-top: 2em;
 }
