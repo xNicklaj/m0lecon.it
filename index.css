@@ -261,6 +261,13 @@ h2{
   flex-direction:column;
 }
 
+/* https://blog.avada.io/css/dividers/#responsive-skewed-page-dividers-(using-css-gradients)-chilli-con-code */
+.skew-cc{
+  width:100%;
+  height:100px;
+  background: linear-gradient(to right bottom, var(--lighten-background) 49%, rgba(52, 103, 81, .5) 50%)/*,    linear-gradient(-50deg, rgba(52, 103, 81, .5) 16px, #000 0)*/;
+  padding-top: 2em;
+}
 
 @media screen and (min-width: 800px){
   body{
@@ -301,15 +308,6 @@ h2{
     width: 0px;
     height: 1em;
   }
-  /*
-  .navbar:hover > ul > li > a span:nth-child(2){
-    visibility: visible;
-    opacity: 1;
-    width: auto;
-    margin-right: 1rem;
-  }
-  */
-
   
   .navbar .menu-item:hover a .entry-label{
     display: inline-block;
@@ -419,6 +417,11 @@ h2{
   .split-view{
     flex-direction: column;
   }
+
+  .skew-cc{
+    padding-top:0;
+    height: 75px;
+  }
 }
 
 @media screen and (max-width: 350px){
@@ -433,12 +436,4 @@ h2{
 
 @media screen and (prefers-color-scheme: light){
 
-}
-
-/* https://blog.avada.io/css/dividers/#responsive-skewed-page-dividers-(using-css-gradients)-chilli-con-code */
-.skew-cc{
-  width:100%;
-  height:100px;
-  background: linear-gradient(to right bottom, var(--lighten-background) 49%, rgba(52, 103, 81, .5) 50%)/*,    linear-gradient(-50deg, rgba(52, 103, 81, .5) 16px, #000 0)*/;
-  padding-top: 2em;
 }
