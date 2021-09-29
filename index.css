@@ -30,8 +30,8 @@
 body{
   background: var(--page-background-color);
   margin: 0;
-  font-family: 'Aller', sans-serif;
   overflow-x: hidden;
+  font-family: 'Aller', sans-serif;
 }
 
 html{
@@ -213,6 +213,7 @@ h2{
 
 #partners > div > ul{
   display: flex;
+  flex-wrap: wrap;
 }
 
 #partners > div > ul > li{
@@ -254,6 +255,7 @@ h2{
   margin-top: 4rem;
   font-size: 20px;
   position: absolute;
+  width: 100%;
   align-items: center;
   top: 0;
   left: 8rem;
@@ -272,18 +274,15 @@ h2{
 @media screen and (min-width: 800px){
   body{
     display: grid;
-    grid-template-areas: "navbar root";
     flex-direction: column;
     flex-grow: 4;
   }
 
   .navbar{
     font-size: 20px;
-    grid-area: "navbar";
     justify-items: start;
     height: 100%;
-    width: fit;
-    transition: width 800ms ease;
+    width: 10vw;
   }
   
   .navbar ul{
@@ -337,7 +336,14 @@ h2{
   }
 
   #root{
-    grid-area: "root";
+    width: 90vw;
+    left: 10vw;
+  }
+}
+
+@media screen and (max-width: 1450px){
+  #root{
+    font-size: 16px;
   }
 }
 
