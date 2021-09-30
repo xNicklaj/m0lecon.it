@@ -54,16 +54,6 @@ h2{
 
 /* Page */
 
-.navbar ul{
-  list-style: none;
-  flex-wrap: wrap;
-  display: flex;
-}
-
-.history{
-  padding: 0;
-}
-
 .menu-item{
   border-radius: .1em;
   color: var(--text-accent-color);
@@ -94,10 +84,22 @@ h2{
   flex-direction: column;
 }
 
+.navbar ul{
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0;
+}
+
 .navbar > ul > li > a{
   display: flex;
   flex-direction: row;
   transition: color 300ms;
+}
+
+.navbar > ul > li{
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar > ul > li > a > .icon {
@@ -105,7 +107,7 @@ h2{
   display: flex;
   justify-content: center;
   justify-items: center;
-  margin-right: 40px;
+  margin-right: 24px;
 }
 
 .navbar > ul > li > a:hover{
@@ -326,10 +328,12 @@ h2{
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    width: 100%;
   }
 
   .navbar > ul > li{
     display: flex;
+    width: calc(100% - 1.75rem);
   }
 
   .navbar > ul > li > a{
