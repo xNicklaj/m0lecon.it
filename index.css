@@ -376,7 +376,7 @@ h2{
   }
 
   #root{
-    width: 90vw;
+    width: calc(90vw - 1.25rem);
     left: 10vw;
   }
 }
