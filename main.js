@@ -3,8 +3,6 @@ const root = document.querySelector("#root");
 const navbar = document.querySelector(".navbar");
 const hamburger = document.querySelector("#hamburger");
 let isMenuActive = false;
-const userAgent = navigator.userAgent.toLowerCase();
-
 let scroll = new SmoothScroll('a[data-scroll]', {speed: 600, speedAsDuration: true});
 
 const toggleMenu = () => {
