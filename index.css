@@ -107,7 +107,6 @@ h2{
   display: flex;
   justify-content: center;
   justify-items: center;
-  margin-right: 24px;
 }
 
 .navbar > ul > li > a:hover{
@@ -351,7 +350,7 @@ h2{
   .navbar .menu-item:hover a .entry-label{
     display: inline-block;
     position: absolute;
-    left: calc(10vw - 2rem);
+    left: calc(10vw - 1rem);
     text-align: start;
     white-space: nowrap;
     visibility: visible;
@@ -476,6 +475,10 @@ h2{
 
   .history{
     display: none !important;
+  }
+  
+  .navbar > ul > li > a > .icon{
+    margin-right: 24px;
   }
 }
 
