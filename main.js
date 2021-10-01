@@ -31,7 +31,7 @@ let isMenuActive = false;
 const navbar = document.querySelector(".navbar");
 const hamburger = document.querySelector("#hamburger");
 const toggleMenu = () => {
-  if(window.matchMedia("(max-width: 800px)").matches == false) return;
+  if(window.matchMedia("(max-width: 950px)").matches == false) return;
   if(!isMenuActive){
     navbar.className += " visible";
     hamburger.className += " fa-times";
