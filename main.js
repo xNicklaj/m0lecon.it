@@ -6,7 +6,7 @@ let isMenuActive = false;
 const userAgent = navigator.userAgent.toLowerCase();
 
 if(userAgent.indexOf("windows") && userAgent.indexOf("mozilla")){
-  html.style = "scroll-behavior: none";
+  html.style = "scroll-behavior: auto";
 }
 
 const toggleMenu = () => {
