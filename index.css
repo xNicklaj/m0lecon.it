@@ -189,6 +189,7 @@ h2{
   align-items: center;
   justify-content: center;
   column-gap: 1rem;
+  padding-left: 0;
 }
 
 .footer > ul > li > a >  img{
