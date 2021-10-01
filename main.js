@@ -5,12 +5,6 @@ const hamburger = document.querySelector("#hamburger");
 let isMenuActive = false;
 const userAgent = navigator.userAgent.toLowerCase();
 
-/*
-if(userAgent.indexOf("windows") && userAgent.indexOf("mozilla")){
-  html.style = "scroll-behavior: none";
-}
-*/
-
 let scroll = new SmoothScroll('a[data-scroll]', {speed: 600, speedAsDuration: true});
 
 const toggleMenu = () => {
