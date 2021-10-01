@@ -482,14 +482,8 @@ h2{
   }
 }
 
-@media screen and (max-width: 350px){
-  .menu-item{
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-height: 325px){
- .navbar > ul > li{
-   font-size: 16px;
+@media screen and (max-width: 350px), screen and (max-height: 325px){
+  .menu-item > a{
+    font-size: 16px;
   }
 }
