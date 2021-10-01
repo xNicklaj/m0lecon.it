@@ -5,7 +5,7 @@ const hamburger = document.querySelector("#hamburger");
 let isMenuActive = false;
 const userAgent = navigator.userAgent.toLowerCase();
 
-if(userAgent.indexOf("windows") && userAgent.indexOf("mozilla")){
+if(userAgent.indexOf("windows") != -1 && userAgent.indexOf("mozilla") != -1){
   html.style = "scroll-behavior: auto";
 }
 
