@@ -51,14 +51,3 @@ const toggleMenu = () => {
 //window.addEventListener('scroll', updateNavbarItems);
 hamburger.addEventListener('click', toggleMenu);
 document.querySelectorAll(".menu-item").forEach((menuItem) => {menuItem.addEventListener("click", toggleMenu)});
-
-// Prevents confusing instant scrolling for menus
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
