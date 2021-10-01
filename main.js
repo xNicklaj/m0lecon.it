@@ -3,11 +3,7 @@ const root = document.querySelector("#root");
 const navbar = document.querySelector(".navbar");
 const hamburger = document.querySelector("#hamburger");
 let isMenuActive = false;
-const userAgent = navigator.userAgent.toLowerCase();
-
-if(userAgent.indexOf("windows") != -1 && userAgent.indexOf("mozilla") != -1){
-  html.style = "scroll-behavior: auto";
-}
+let scroll = new SmoothScroll('a[data-scroll]', {speed: 600, speedAsDuration: true});
 
 const toggleMenu = () => {
   if(window.matchMedia("(max-width: 950px)").matches == false) return;
