@@ -3,6 +3,7 @@
   <head>
     <title>m0leCon 2021</title> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="icon" type="image/png" href="static/images/favicon.png" />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="timeline.css">
    <script src="https://kit.fontawesome.com/9b17d39c9f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <meta name="theme-color" content="#161616">
@@ -20,6 +21,12 @@
           <a data-scroll href="#conference">
             <span class="icon"><i class="fas fa-chalkboard-teacher"></i></span>
             <span class="entry-label">Conference</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a data-scroll href="#timetable">
+            <span class="icon"><i class="fas fa-calendar"></i></span>
+            <span class="entry-label">Timetable</span>
           </a>
         </li>
         <li class="menu-item">
@@ -72,34 +79,47 @@
         </p>
         <img src="static/images/sala.png" />
       </section>
+      <section class="container" id="timetable">
+        <h2>Timetable</h2>
+        <div id="thursday">
+          <h2>Thursday, December 2nd</h2>
+          <ul class="timeline">
+            <li class="event" data-date="21:00" >
+              <h3>Start of m0leCon CTF</h3>
+            </li>
+          </ul>
+        </div>
+        <div id="friday">
+          <h2>Friday, December 3rd</h2>
+          <ul class="timeline">
+            <li class="event" data-date="14:00">
+              <h3>Start of m0leCon beginner CTF</h3>
+            </li>
+            <li class="event" data-date="19:00">
+              <h3>End of m0leCon beginner CTF</h3>
+            </li>
+            <li class="event" data-date="21:00">
+              <h3>End of m0leCon CTF</h3>
+            </li>
+          </ul>
+        </div>
+        <div id="saturday">
+          <h2>Saturday, December 4th</h2>
+          <ul class="timeline">
+            <li class="event" data-date="9:00">
+              <h3>Registrations</h3>
+            </li>
+            <li class="event" data-date="10:00">
+              <h3>Conference start</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="container" id="cfp">
         <h2>Call For Presentations</h2>
-        <p>
-          Call for Presentations is open!
-m0leCon is a computer security conference, so any work related to computer security will be considered by the program committee. We encourage CTF-related or in general offensive security works with live demonstrations to the audience. Submission does not have to be completely original, but works with higher grade of novelty will be preferred.
-The committee will evaluate the submissions in terms of:
-          <ul>
-            <li>relevance</li>
-            <li>novelty</li>
-            <li>completeness</li>
-            <li>technical content</li>
-          </ul>
-        </p>
-        <p>
-          Every presentation will be 30 minutes long, plus an additional 5-10 minutes slot for questions. The presentation must be in english. Travel and accommodation costs will be covered by the organizers, plus a speaker pack with gadgets and gifts from the conference.
-Call for Presentations will be open from 20th of July 2021 to 17th of October. Notifications for the accepted presentations is due to October 31st. Early submissions may receive earlier notifications.
-In order to apply, you should send an email to <a href="mailto:info@m0lecon.it">info@m0lecon.it</a> with subject [CfP m0leCon 2021] &lt;your title here&gt;, including
-        </p>
-        <ul>
-          <li>Your name</li>
-          <li>Your contancts (including twitter/personal website)</li>
-          <li>Where you plan to travel from (if accepted)</li>
-          <li>A short biography (max 1500 chars)</li>
-          <li>The abstract (max 4000 chars)</li>
-          <li>An outline of the talk (max 8000 chars)</li>
-          <li>Any additional material (slides, papers, demos)</li>
-          <li>If the work is novel (otherwise, where and when it has been presented)</li>
-        </ul>
+        <p style="text-align: center">
+          Call for presentations is closed. The final schedule for the conference will be published soon.
+        </p> 
       </section>
       <section class="container split-view" id="CTF">
         <article>
