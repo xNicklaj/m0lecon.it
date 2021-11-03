@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>m0leCon 2021</title> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="icon" type="image/png" href="static/images/favicon.png" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="timeline.css">
+   <script src="https://kit.fontawesome.com/9b17d39c9f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <meta name="theme-color" content="#161616">
+    <meta charset="UTF-8">
+    <meta name="description" content="m0leCon 2021 is the third edition of the computer security conference organized by the student team pwnthem0le in collaboration with the Politecnico di Torino." >
+    <meta property="og:title" content="m0leCon 2021" />
+    <meta property="og:image" content="http://m0lecon.it/static/images/banner_sito.png" />
+    <meta property="og:description" content="m0leCon 2021 is the third edition of the computer security conference organized by the student team pwnthem0le in collaboration with the Politecnico di Torino." />
+  </head>
+  <body>
+    <nav class="navbar">
+      <i class="fas fa-bars" id="hamburger"></i>
+      <ul>
+        <li class="menu-item">
+          <a data-scroll href="index.html#conference">
+            <span class="icon"><i class="fas fa-chalkboard-teacher"></i></span>
+            <span class="entry-label">Conference</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a data-scroll href="index.html#timetable">
+            <span class="icon"><i class="fas fa-calendar"></i></span>
+            <span class="entry-label">Timetable</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a data-scroll href="index.html#cfp">
+            <span class="icon"><i class="fas fa-microphone"></i></span>
+            <span class="entry-label">Call for presentations</span>
+          </a>
+        </li> 
+        <li class="menu-item">
+          <a data-scroll href="index.html#CTF">
+            <span class="icon"><i class="fas fa-flag"></i></span>
+            <span class="entry-label">CTF</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a data-scroll href="index.html#partners">
+            <span class="icon"><i class="fas fa-handshake"></i></span>
+            <span class="entry-label">Our partners</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a data-scroll href="index.html#about-us">
+            <span class="icon"><i class="fas fa-info"></i></span>
+            <span class="entry-label">About us</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="speakers.html">
+            <span class="icon"><i class="fas fa-users"></i></span>
+            <span class="entry-label">Speakers</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="icon"><i class="fas fa-chalkboard"></i></span>
+            <span class="entry-label">Talks</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="https://2020.m0lecon.it">
+            <span class="icon" style="font-weight: bold">2020</span>
+            <span class="entry-label">m0leCon 2020</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="https://2019.m0lecon.it">
+            <span class="icon" style="font-weight: bold">2019</span>
+            <span class="entry-label">m0leCon 2019</span>
+          </a>
+        </li>
+      </ul> 
+    </nav>
+    <div id="root">
+      <img class="banner" src="static/images/banner_sito.png" alt="banner.png"/> 
+      <section class="container" id="speakers">
+        <h2>Speakers</h2>
+        <article class="speaker left">
+          <div class="info">
+            <span>BioHacker: The Invisible Threat</span>
+            <span><a href="speakers.html#len-noe">Len Noe</a></span>
+          </div>
+          <p class="whois">
+            Biohackers exist and walk among us. Most security professionals would not allow users into their environment with offensive security tools. How do you address individuals who have surgically implanted such devices into their bodies.
+            <br>
+            I have multiple sub-dermal implants that range from NFC, HID/Prox and RFiD devices. This allows me to become the attack vector. In this talk, I provide a brief overview of the types of bio-implants on the market and share various case studies on the potential damage malicious biohackers can inflict.
+            <br>
+            I also demonstrate how I am able to quickly compromise loosely connected devices and open a reverse TCP Shell to a CnC server through my attack L3pr@cy in under three minutes.
+            <br>
+            Finally, I show how I steal HID Proximity Card Data and write that back to the implant. This avoids any physical evidence of a breach. This also allows me to gain access to data as well as physical access to secured locations.
+            <br>
+            As security professionals, we must anticipate the unknown. These include any individuals that enter our facilities or are simply around us in public. These types of attacks are becoming more common. A majority of security community are not aware they exist. Discussions on what was once thought to be science-fiction are now science fact.
+            <br>
+            Through continuing education on phishing and social engineering attacks, tightening MDM restrictions, endpoint management, behavioral analytics, least privilege and privileged access, we can take preventive measures around the threats we can’t see.
+          </p>
+        </article>
+        <article class="speaker right">
+          <div class="info">
+            <span>Rage Against The Machine Clear</span>
+            <span><a href="speakers.html#enrico-barberis">Enrico Barberis</a></span>
+            <span><a href="speakers.html#henry-ragab">Henry Ragab</a></span>
+          </div>
+          <p class="whois">
+           Since the discovery of Spectre and Meltdown, the security community has put a lot of effort into discovering new speculative execution attacks but still built on top of variants of the same speculation techniques, for example, by mistraining yet another predictor, and much less attention was devoted to the analysis of the root causes of speculation itself.
+This paper tackles the problem from a new perspective, closely examining the different root causes of speculative execution, and specifically focusing on the unexplored class of speculations based on machine clears (MC). By reverse engineering the root causes machine clear, such as Floating Point, Self-Modifying Code, Memory Ordering, and Memory Disambiguation, these events not only originate new speculative execution windows that widen the horizon for known attacks, but also yield two entirely new attack primitives which affect all major CPU vendors: Intel, AMD and ARM. The primitives are called Floating Point Value Injection (FPVI), used to inject speculative floating-point values in subsequent instructions and Speculative Code Store Bypass (SCSB) used to microarchitecturally desynchronize code and data, triggering speculative execution of stale code. The paper also presents an end-to-end FPVI exploit on the latest Mozilla Firefox browser, leaking arbitrary memory through attacker-controlled and speculatively-injected floating-point results in JavaScript, affecting millions of users. Finally, the paper presents a new root cause-based classification of all known speculative execution paths, to clarify the whole speculative execution attacks scene. 
+          </p>
+        </article> 
+        <article class="speaker left">
+          <div class="info">
+            <span>Backdoor dreaming</span>
+            <span><a href="speakers.html#carola-frediani">Carola Frediani</a></span>
+          </div>
+          <p class="whois">
+            Security products are often the ideal target for those who want to attack a system by weakening it from within. From encryption equpment to VPNs, from encryption software to chips, in recent years alarms have been raised about the possible presence of backdoors or serious vulnerabilities in products meant to be safe. How can we draw the line between paranoia and reality?
+          </p>
+        </article>
+        <article class="speaker right">
+          <div class="info">
+            <span>Low cost fault injection</span>
+            <span><a href="speakers.html#alberto-battistello">Alberto Battistello</a></span>
+          </div>
+          <p class="whois">
+            Since their introduction, fault attacks has been used as a meaningful
+            way to subvert a computation running on embedded devices. Historically,
+            one of the first means of injecting faults were by using the lights
+            emitted by a (homemade modified) flash camera. Such technology evolved,
+            such that today there exists very expensive laser technologies, able to
+            inject very precise faults on top notch devices. At the same time,
+            projects like the chipshouter, from NewAE, propose for a few thousand
+            dollars, electromagnetic means to inject faults. In this work we show
+            that one can start working on fault attacks with 0$ by using a
+            disposable camera flash and a bit of soldering to obtain a meaningful
+            way to inject EM shots into a chip.
+          </p>
+        </article>
+        <article class="speaker left">
+          <div class="info">
+            <span>Hacking Hardware Devices</span>
+            <span><a href="speakers.html#antonio-varriale">Antonio Varriale</a></span>
+          </div>
+          <p class="whois">
+            Nowadays most of the (published) attacks are related to computers and servers. However, we are moving toward a future of micro electronic devices that will pervade not only industry and urban infrastructure, but our entire lives.
+            In this new world, 5G technology will be the main glue in terms of connectivity and the Internet of Things will be subject to the same issues we're currently facing in information technology, but with a much higher risk as the security of both public and private critical infrastructure is at stake.
+            In this session we will give an overview on how to address the security of interconnected electronic devices from both an attack and defense perspective.
+            Starting from simple microcontrollers, which do not even have a MMU, we will analyze some of the most effective attack/defense techniques related to the intrinsic architecture of embedded systems.
+            We will also review the main hardware features that make a micro controller potentially secure, provided that secure embedded programming strategies are adopted.
+            At the end of the session, a smattering of modern cyber resilience strategies applied to connectivity will be given.
+          </p>
+        </article>
+        <article class="speaker right">
+          <div class="info">
+            <span>A VDI adventure (from home worker to server admin)</span>
+            <span><a href="speakers.html#vittorio-mignini">Vittorio Mignini</a></span>
+            <span><a href="speakers.html#luca-cancelliere">Luca Cancelliere</a></span>
+          </div>
+          <p class="whois">
+            The talk is about the escalation path we used to acquire the server(s) administrator credential during the cyber activities conducted for a large bank customer.
+            The architecture we tested was designed by a customer's supplier as PoC to achieve a hybrid-working model while providing the same, if not higher, security standards the bank was providing to the usual in-house activities. Starting from a VDI system (Citrix), we have been able to overtake the virtual system bypassing the env restrictions and using the VDI as a jumping point to the (testing) internal network.
+            Chaining different critical misconfigurations, we have been able to achieve different kinds of malicious actions, from sensitive data exfiltration till acquisition of  admin server(s) rights.
+          </p>
+        </article>
+      </section>
+      <footer class="footer centered-flex-row" id="about-us"/>
+        <section>
+          <h2>About us</h2>
+          <div class="container">
+            <p>m0leCon is organized by the student team "pwnthem0le", from Politecnico di Torino.</p>
+            <a href="https://pwnthem0le.polito.it" >Learn more...</a>
+          </div>
+        </section>
+        <section>
+          <h2>Contact us</h2>
+          <div>
+            <b>Address</b>
+            <p>Aula Magna "Giovanni Agnelli", Politecnico di Torino, Corso Duca degli Abruzzi 24, 10129, Torino.</p>
+          </div>
+          <div>
+            <b>Email</b>
+            <p><a href="mailto:info@m0lecon.it">info@m0lecon.it</a></p>
+          </div>  
+        </section>
+      </footer>
+      <section class="container footer">
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/channel/UCw2Y3Ijc88H2-ddO2dFOm7Q" >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://pwnthem0le.polito.it" >
+              <img src="static/images/pwnthem0le.png"></img>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/pwnthem0le" >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
