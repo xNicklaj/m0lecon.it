@@ -163,11 +163,6 @@ h2{
       "whois whois avatar";
 }
 
-.right .info, .inforight{
-  justify-self: end;
-  text-align: end;
-}
-
 .speaker .avatar{
   width: 15rem;
   height: 15rem;
@@ -505,6 +500,11 @@ h2{
 
   .speaker{
     padding: 0 8rem;
+  }
+
+  .right .info, .inforight{
+    justify-self: end;
+    text-align: end;
   }
 
   #root{

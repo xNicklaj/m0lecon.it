@@ -82,8 +82,8 @@
     <div id="root">
       <img class="banner" src="static/images/banner_sito.png" alt="banner.png"/> 
       <section class="container" id="speakers">
-        <h2>Speakers</h2>
-        <article class="speaker left">
+        <h2>Talks</h2>
+        <article class="speaker left" id="talk-noe">
           <div class="info">
             <span>BioHacker: The Invisible Threat</span>
             <span><a href="speakers.html#len-noe">Len Noe</a></span>
@@ -102,7 +102,7 @@
             Through continuing education on phishing and social engineering attacks, tightening MDM restrictions, endpoint management, behavioral analytics, least privilege and privileged access, we can take preventive measures around the threats we can’t see.
           </p>
         </article>
-        <article class="speaker right">
+        <article class="speaker right" id="talk-barberis-ragab">
           <div class="info">
             <span>Rage Against The Machine Clear</span>
             <span><a href="speakers.html#enrico-barberis">Enrico Barberis</a></span>
@@ -113,7 +113,7 @@
 This paper tackles the problem from a new perspective, closely examining the different root causes of speculative execution, and specifically focusing on the unexplored class of speculations based on machine clears (MC). By reverse engineering the root causes machine clear, such as Floating Point, Self-Modifying Code, Memory Ordering, and Memory Disambiguation, these events not only originate new speculative execution windows that widen the horizon for known attacks, but also yield two entirely new attack primitives which affect all major CPU vendors: Intel, AMD and ARM. The primitives are called Floating Point Value Injection (FPVI), used to inject speculative floating-point values in subsequent instructions and Speculative Code Store Bypass (SCSB) used to microarchitecturally desynchronize code and data, triggering speculative execution of stale code. The paper also presents an end-to-end FPVI exploit on the latest Mozilla Firefox browser, leaking arbitrary memory through attacker-controlled and speculatively-injected floating-point results in JavaScript, affecting millions of users. Finally, the paper presents a new root cause-based classification of all known speculative execution paths, to clarify the whole speculative execution attacks scene. 
           </p>
         </article> 
-        <article class="speaker left">
+        <article class="speaker left" id="talk-frediani">
           <div class="info">
             <span>Backdoor dreaming</span>
             <span><a href="speakers.html#carola-frediani">Carola Frediani</a></span>
@@ -122,7 +122,7 @@ This paper tackles the problem from a new perspective, closely examining the dif
             Security products are often the ideal target for those who want to attack a system by weakening it from within. From encryption equpment to VPNs, from encryption software to chips, in recent years alarms have been raised about the possible presence of backdoors or serious vulnerabilities in products meant to be safe. How can we draw the line between paranoia and reality?
           </p>
         </article>
-        <article class="speaker right">
+        <article class="speaker right" id="talk-battistello">
           <div class="info">
             <span>Low cost fault injection</span>
             <span><a href="speakers.html#alberto-battistello">Alberto Battistello</a></span>
@@ -141,7 +141,7 @@ This paper tackles the problem from a new perspective, closely examining the dif
             way to inject EM shots into a chip.
           </p>
         </article>
-        <article class="speaker left">
+        <article class="speaker left" id="talk-varriale">
           <div class="info">
             <span>Hacking Hardware Devices</span>
             <span><a href="speakers.html#antonio-varriale">Antonio Varriale</a></span>
@@ -155,7 +155,7 @@ This paper tackles the problem from a new perspective, closely examining the dif
             At the end of the session, a smattering of modern cyber resilience strategies applied to connectivity will be given.
           </p>
         </article>
-        <article class="speaker right">
+        <article class="speaker right" id="talk-cancelliere-mignini">
           <div class="info">
             <span>A VDI adventure (from home worker to server admin)</span>
             <span><a href="speakers.html#vittorio-mignini">Vittorio Mignini</a></span>
