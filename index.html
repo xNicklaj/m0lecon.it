@@ -164,10 +164,9 @@
         </div>
       </section>
       <section class="container" id="cfp">
-        <h2>Call For Presentations</h2>
-        <p style="text-align: center">
-         The call for presentations is closed. The schedule of the conference has been published.
-        </p>
+        <h2>Sign Up Now</h2>
+          <!-- Eventbrite here -->
+          <div class="eb-container" id="eventbrite-widget-container-200029312057"></div>
       </section>
       </section>
       <section class="container split-view" id="CTF">
@@ -270,5 +269,15 @@
       </section>
     </div>
     <script src="main.js"></script>
+    <!-- Eventbrite here -->
+    <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+    <script type="text/javascript">
+      window.EBWidgets.createWidget({
+          // Required
+          widgetType: 'checkout',
+          eventId: '200029312057',
+          iframeContainerId: 'eventbrite-widget-container-200029312057',
+      });
+    </script>
   </body>
 </html>
