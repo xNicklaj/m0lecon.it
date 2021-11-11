@@ -374,6 +374,11 @@ h2{
   width: 192px; 
 }
 
+#platinum-sponsors > ul > li > a > img {
+  width: 210px;
+}
+
+
 #partners > div > ul{
   display: flex;
   flex-wrap: wrap;
@@ -388,6 +393,10 @@ h2{
 }
 
 #partners > div > ul > li > a > img[src*=hat]{
+  transform: scale(75%);
+}
+
+#partners > div > ul > li > a > img[src*=Blu5]{
   transform: scale(75%);
 }
 
