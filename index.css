@@ -140,6 +140,7 @@ h2{
   align-content: center;
   list-style: none;
   justify-content: center;
+  column-gap: 20px;
 }
 
 .speaker{
@@ -338,12 +339,12 @@ h2{
   object-fit: cover;
 }
 
-#cfp{
+#register{
   color: white;
   background: var(--background-accent-color);
 }
 
-#cfp .eb-container{
+#register .eb-container{
   width: 73%;
   margin-left: auto;
   margin-right: auto;
@@ -374,11 +375,6 @@ h2{
   width: 192px; 
 }
 
-#platinum-sponsors > ul > li > a > img {
-  width: 210px;
-}
-
-
 #partners > div > ul{
   display: flex;
   flex-wrap: wrap;
@@ -392,12 +388,20 @@ h2{
   margin-right: 1rem;
 }
 
+#platinum-sponsors > ul > li > a > img {
+  width: 400px!important;
+}
+
 #partners > div > ul > li > a > img[src*=hat]{
   transform: scale(75%);
 }
 
 #partners > div > ul > li > a > img[src*=Blu5]{
   transform: scale(75%);
+}
+
+#partners > div > ul > li > a > img[src*=aizoon]{
+  transform: scale(115%);
 }
 
 #about-us > section{
@@ -653,7 +657,7 @@ h2{
     padding-top: 0;
   }
 
-  #cfp .eb-container{
+  #register .eb-container{
     width: 83%;
   }
 
