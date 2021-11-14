@@ -339,12 +339,12 @@ h2{
   object-fit: cover;
 }
 
-#register{
+#registration{
   color: white;
   background: var(--background-accent-color);
 }
 
-#register .eb-container{
+#registration .eb-container{
   width: 73%;
   margin-left: auto;
   margin-right: auto;
@@ -657,7 +657,7 @@ h2{
     padding-top: 0;
   }
 
-  #register .eb-container{
+  #registration .eb-container{
     width: 83%;
   }
 
