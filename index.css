@@ -388,20 +388,12 @@ h2{
   margin-right: 1rem;
 }
 
-#platinum-sponsors > ul > li > a > img {
-  width: 400px!important;
-}
-
 #partners > div > ul > li > a > img[src*=hat]{
   transform: scale(75%);
 }
 
 #partners > div > ul > li > a > img[src*=Blu5]{
   transform: scale(75%);
-}
-
-#partners > div > ul > li > a > img[src*=aizoon]{
-  transform: scale(115%);
 }
 
 #about-us > section{
@@ -525,6 +517,14 @@ h2{
   .right .info, .inforight{
     justify-self: end;
     text-align: end;
+  }
+
+  #platinum-sponsors > ul > li > a > img {
+    width: 400px!important;
+  }
+
+  #partners > div > ul > li > a > img[src*=aizoon]{
+    transform: scale(115%);
   }
 
   #root{
