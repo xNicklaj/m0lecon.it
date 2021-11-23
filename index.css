@@ -392,6 +392,10 @@ h2{
   transform: scale(75%);
 }
 
+#partners > div > ul > li > a > img[src*=redbull]{
+  transform: scale(.6);
+}
+
 #partners > div > ul > li > a > img[src*=Blu5]{
   transform: scale(75%);
 }
