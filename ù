@@ -15,9 +15,8 @@
   --secondary-accent-color: #C84B31;
   --menu-background-color: rgba(15,15,15,1);
   --inset-box-shadow-01: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  --yt-icon-color: #ff0000;
   --dl-icon-color: #1aac6c;
-  --dl-icon-color-disabled: #78909C;
+  --yt-icon-color: #ff0000;
 }
 
 ::-webkit-scrollbar{
@@ -391,16 +390,20 @@ h2{
   margin-right: 1rem;
 }
 
+#platinum-sponsors > ul > li > a > img {
+  width: 400px!important;
+}
+
 #partners > div > ul > li > a > img[src*=hat]{
   transform: scale(75%);
 }
 
-#partners > div > ul > li > a > img[src*=redbull]{
-  transform: scale(.6);
-}
-
 #partners > div > ul > li > a > img[src*=Blu5]{
   transform: scale(75%);
+}
+
+#partners > div > ul > li > a > img[src*=aizoon]{
+  transform: scale(115%);
 }
 
 #about-us > section{
@@ -524,14 +527,6 @@ h2{
   .right .info, .inforight{
     justify-self: end;
     text-align: end;
-  }
-
-  #platinum-sponsors > ul > li > a > img {
-    width: 400px!important;
-  }
-
-  #partners > div > ul > li > a > img[src*=aizoon]{
-    transform: scale(115%);
   }
 
   #root{
