@@ -327,6 +327,11 @@ h2{
   background-color: var(--lighten-background);
 }
 
+.single-text{
+  color: white;
+  padding: .5rem;
+}
+
 #conference{
   color: white;
   padding: .5rem;
@@ -461,7 +466,7 @@ h2{
     height: 100%;
     width: 10vw;
   }
-  
+ 
   .navbar ul{
     display: flex;
     flex-direction: column;
@@ -505,7 +510,8 @@ h2{
   }
 
 
-  .container > p{
+  /* Remove article for split text */
+  .container > p, .container > article{
     width: 70%;
     margin-right: auto;
     margin-left: auto;
