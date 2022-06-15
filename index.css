@@ -123,8 +123,19 @@ h2{
   scroll-snap-align: start;
 }
 
-.container > h2{
+.container{
   color: white;
+}
+
+.container ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.container ul li:before{
+  content: '-';
+  margin-right: .5rem;
+  margin-left: 0;
 }
 
 .banner{
@@ -324,6 +335,10 @@ h2{
 }
 
 #CTF{ 
+  background-color: var(--lighten-background);
+}
+
+#cfp{
   background-color: var(--lighten-background);
 }
 
