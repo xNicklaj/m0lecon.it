@@ -35,6 +35,7 @@ body{
   margin: 0;
   overflow-x: hidden;
   font-family: 'Aller', sans-serif;
+  text-align: justify;
 }
 
 html{
@@ -132,7 +133,7 @@ h2{
   padding-left: 0;
 }
 
-.container ul li:before{
+.container .ul-dashed li:before{
   content: '-';
   margin-right: .5rem;
   margin-left: 0;
@@ -338,7 +339,7 @@ h2{
   background-color: var(--lighten-background);
 }
 
-#cfp{
+#CFP, #cfs{
   background-color: var(--lighten-background);
 }
 
