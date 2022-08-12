@@ -31,7 +31,8 @@
   border-bottom: 1px dashed var(--text-accent-color);
   padding-bottom: 25px;
   margin-bottom: 50px;
-  width: 100%;
+  width: calc(100% - 30px);
+  left: 30px;
   position: relative;
 }
 .timeline .event:last-of-type {
