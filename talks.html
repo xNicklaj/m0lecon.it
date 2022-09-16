@@ -83,25 +83,19 @@
       <img class="banner" src="static/images/banner_sito.png" alt="banner.png"/> 
       <section class="container" id="speakers">
         <h2>Talks</h2>
-        <article class="speaker left" id="talk-noe">
+        <article class="speaker left" id="pietro-borrello">
           <div class="info">
-            <span>BioHacker: The Invisible Threat</span>
-            <span><a href="speakers.html#len-noe">Len Noe</a></span>
+            <span>ÆPIC Leak: Architecturally Leaking Uninitialized Data from the Microarchitecture</span>
+            <span><a href="speakers.html#pietro-borrello">Pietro Borrello</a></span>
           </div>
           <p class="whois">
-            Biohackers exist and walk among us. Most security professionals would not allow users into their environment with offensive security tools. How do you address individuals who have surgically implanted such devices into their bodies.
+            CPU vulnerabilities undermine the security guarantees provided by software- and hardware-security improvements. While the discovery of transient-execution attacks increased the interest in CPU vulnerabilities on a microarchitectural level, architectural CPU vulnerabilities are still understudied.
             <br>
-            I have multiple sub-dermal implants that range from NFC, HID/Prox and RFiD devices. This allows me to become the attack vector. In this talk, I provide a brief overview of the types of bio-implants on the market and share various case studies on the potential damage malicious biohackers can inflict.
-            <br>
-            I also demonstrate how I am able to quickly compromise loosely connected devices and open a reverse TCP Shell to a CnC server through my attack L3pr@cy in under three minutes.
-            <br>
-            Finally, I show how I steal HID Proximity Card Data and write that back to the implant. This avoids any physical evidence of a breach. This also allows me to gain access to data as well as physical access to secured locations.
-            <br>
-            As security professionals, we must anticipate the unknown. These include any individuals that enter our facilities or are simply around us in public. These types of attacks are becoming more common. A majority of security community are not aware they exist. Discussions on what was once thought to be science-fiction are now science fact.
-            <br>
-            Through continuing education on phishing and social engineering attacks, tightening MDM restrictions, endpoint management, behavioral analytics, least privilege and privileged access, we can take preventive measures around the threats we can’t see.
+            In this talk, we present AEPIC Leak: the first architectural CPU bug that leaks stale data from the microarchitecture without using a side channel. AEPIC Leak works on all recent Sunny-Cove-based Intel CPUs (i.e., Ice Lake and Alder Lake) and does not require hyperthreading enabled. It architecturally leaks stale data incorrectly returned by reading undefined APIC-register ranges. AEPIC Leak samples data transferred between the L2 and last-level cache, including SGX enclave data, from the superqueue. We target data in use, e.g., register values and memory loads, as well as data at rest, e.g., SGX-enclave data pages. Even if AEPIC Leak is a sampling-based attack, we introduce techniques to precisely influence from which page and offset the attack leaks from.
+Our end-to-end attack extracts AES-NI, RSA, and even the Intel SGX attestation keys from enclaves within a few seconds. We discuss mitigations and conclude that the only short-term mitigations for AEPIC Leak are to disable APIC MMIO or not rely on SGX.
           </p>
         </article>
+        <!--
         <article class="speaker right" id="talk-barberis-ragab">
           <div class="info">
             <span>Rage Against The Machine Clear</span>
@@ -182,7 +176,7 @@ used to enhance attackers' capabilities.
             The architecture we tested was designed by a customer's supplier as PoC to achieve a hybrid-working model while providing the same, if not higher, security standards the bank was providing to the usual in-house activities. Starting from a VDI system (Citrix), we have been able to overtake the virtual system bypassing the env restrictions and using the VDI as a jumping point to the (testing) internal network.
             Chaining different critical misconfigurations, we have been able to achieve different kinds of malicious actions, from sensitive data exfiltration till acquisition of  admin server(s) rights.
           </p>
-        </article>
+        </article> -->
       </section>
       <footer class="footer centered-flex-row" id="about-us"/>
         <section>
