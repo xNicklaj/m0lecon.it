@@ -95,7 +95,7 @@
       <img class="banner" src="static/images/banner_sito.png" alt="banner.png"/> 
       <section class="container" id="speakers">
         <h2>Talks</h2>
-        <article class="speaker left" id="pietro-borrello">
+        <article class="speaker left" id="talk-pietro-borrello">
           <div class="info">
             <span>ÆPIC Leak: Architecturally Leaking Uninitialized Data from the Microarchitecture</span>
             <span><a href="speakers.html#pietro-borrello">Pietro Borrello</a></span>
@@ -107,6 +107,17 @@
 Our end-to-end attack extracts AES-NI, RSA, and even the Intel SGX attestation keys from enclaves within a few seconds. We discuss mitigations and conclude that the only short-term mitigations for AEPIC Leak are to disable APIC MMIO or not rely on SGX.
           </p>
         </article>
+        <article class="speaker right" id="talk-nils-albartus-julian-speith">
+          <div class="info">
+            <span>The Painful Life of a Hardware Reverse Engineer</span>
+            <span><a href="speakers.html#nils-albartus">Nils Albartus</a></span>
+            <span><a href="speakers.html#julian-speith">Julian Speith</a></span>
+          </div>
+          <p class="whois">
+            If you are interested in talks with happy ending, you better be off listening to some other topic. In this talk, not only there is no happy ending, there is no happy beginning and a very few happy things in the middle. This is not only because we destroyed 10 smartphones during our reserach project, but rather due to our daily struggles that come along with being a hardware reverse engineer. You don’t know what a netlist is? Good, then there is still time to save yourself. Otherwise, in this talk, you will learn how to extract it from a chip, analyze it, and understand it - and why, despite everything speaking against it, this is actually quite fun and exciting. We will also provide (painful) insights into conducting real-world netlist reverse engineering by presenting a case-study on a completely unknown modern hardware design. Welcome to <a href="https://github.com/emsec/hal">HAL</a>!
+          </p>
+        </article>
+
         <!--
         <article class="speaker right" id="talk-barberis-ragab">
           <div class="info">
