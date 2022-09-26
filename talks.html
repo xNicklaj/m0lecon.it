@@ -131,6 +131,23 @@ Our end-to-end attack extracts AES-NI, RSA, and even the Intel SGX attestation k
             To truly understand the concept of containers and the specific attack vectors we need to dive into important principles in container internals focused on container capabilities. We'll describe how it actually works, how we can use specific container capabilities to pull off container escapes, and how to minimize the danger of this kind of attack.
           </p>
         </article>
+        <article class="speaker right" id="talk-bobby-rauch">
+          <div class="info">
+            <span>“GIFShell” — Covert Attack Chain and C2 Utilizing Microsoft Teams GIFs</span>
+            <span><a href="speakers.html#bobby-rauch">Bobby Rauch</a></span>
+          </div>
+          <p class="whois">
+            Seven different vulnerabilities and insecure design elements present in Microsoft Teams, can be leveraged by an attacker, to execute a reverse shell between an attacker and victim, where no communication is directly exchanged between an attacker and a victim, but is entirely piped through malicious GIFs sent in Teams messages, and Out of Bounds (OOB) lookups of GIFs conducted by Microsoft’s own servers. This unique C2 infrastructure can be leveraged by sophisticated threat actors to avoid detection by EDR and other network monitoring tools. Particularly in secure network environments, where Microsoft Teams might be one of a handful of allowed, trusted hosts and programs, this attack chain can be particularly devastating.
+            <br>
+            Two additional vulnerabilities discovered in Microsoft Teams, a lack of permission enforcement and attachment spoofing, allow for the GIFShell stager to be convincingly dropped and executed on the victim’s machine, completing the attack chain from victim compromise to covert communications. These two vulnerabilities can also lead to RCE directly via a crafted NTLM Relay attack.
+            <br>
+            This entire attack chain and related vulnerabilities, were reported to Microsoft in May and June of 2022, however after 85 days of review, the reports did not meet their “bar for immediate servicing” despite this being “great research”.
+            <br>
+            The reports were submitted for Teams — Version 1.5.00.11163 (And Earlier). These vulnerabilities and misconfigurations remain unpatched in the most recent version of Teams and the GIFShell attack chain can be carried on the most recent versions of Teams. Initial research reveals several malware samples which are potentially leveraging this attack chain in the wild. Microsoft has explicitly granted me permission to “blog about/discuss this case and/or present your findings publicly”.
+            <br>
+            Oftentimes, companies and engineering teams make design decisions based on “assumed risk”, whereby a potentially low impact vulnerability is left unpatched or a security feature is disabled by default, in order to achieve some business objective. I believe this research is demonstrative of an instance where a series of design decisions and “assumed risks” made by a product engineering team, can be chained together into a more pernicious attack chain, and a far higher risk exploit than the product designers imagined was possible.
+          </p>
+        </article>
 
         <!--
         <article class="speaker right" id="talk-barberis-ragab">
