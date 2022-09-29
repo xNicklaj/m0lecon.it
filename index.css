@@ -552,6 +552,11 @@ h2{
     width: 400px!important;
   }
 
+
+  #gold-sponsors > ul > li > a > img {
+    width: 300px!important;
+  }
+
   #partners > div > ul > li > a > img[src*=aizoon]{
     transform: scale(115%);
   }
