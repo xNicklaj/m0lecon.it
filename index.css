@@ -234,6 +234,15 @@ h2{
   grid-area: whois;
   padding: 2rem;
   text-align: justify;
+  display: block;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.whois ul {
+  list-style: disc inside; 
 }
 
 .split-view{
