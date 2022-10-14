@@ -137,7 +137,7 @@ Our end-to-end attack extracts AES-NI, RSA, and even the Intel SGX attestation k
             <span><a href="speakers.html#bobby-rauch">Bobby Rauch</a></span>
           </div>
           <p class="whois">
-            Seven different vulnerabilities and insecure design elements present in Microsoft Teams, can be leveraged by an attacker, to execute a reverse shell between an attacker and victim, where no communication is directly exchanged between an attacker and a victim, but is entirely piped through malicious GIFs sent in Teams messages, and Out of Bounds (OOB) lookups of GIFs conducted by Microsoft’s own servers. This unique C2 infrastructure can be leveraged by sophisticated threat actors to avoid detection by EDR and other network monitoring tools. Particularly in secure network environments, where Microsoft Teams might be one of a handful of allowed, trusted hosts and programs, this attack chain can be particularly devastating.
+            Seven different vulnerabilities and insecure design elements present in Microsoft Teams, can be leveraged by an attacker, to execute a reverse shell between an attacker and victim, where no communication is directly exchanged between an attacker and a victim, but is entirely piped through malicious GIFs sent in Teams messages, and Out of Bounds (OOB) lookups of GIFs conducted by Microsoft's own servers. This unique C2 infrastructure can be leveraged by sophisticated threat actors to avoid detection by EDR and other network monitoring tools. Particularly in secure network environments, where Microsoft Teams might be one of a handful of allowed, trusted hosts and programs, this attack chain can be particularly devastating.
             <br>
             Two additional vulnerabilities discovered in Microsoft Teams, a lack of permission enforcement and attachment spoofing, allow for the GIFShell stager to be convincingly dropped and executed on the victim's machine, completing the attack chain from victim compromise to covert communications. These two vulnerabilities can also lead to RCE directly via a crafted NTLM Relay attack.
             <br>
@@ -176,6 +176,25 @@ Our end-to-end attack extracts AES-NI, RSA, and even the Intel SGX attestation k
             Meanwhile, Microsoft rolled out new mitigations: driver blocklists and Kernel Data Protection (KDP), a new platform security technology for preventing data-oriented attacks. Since using blocklist only narrows the attack vector, we focused on how KDP was applied in this case to eliminate the attack surface.
             <br>
             We'll present two novel techniques we found to bypass KDP-protected DSE. Furthermore, they work on all Windows versions, starting with the first release of DSE. Each technique will be demonstrated on live machines. We'll also suggest a mitigation to cope with the issue, building upon the same premises as attackers, until HVCI becomes prevalent and really eliminates this attack surface.
+          </p>
+        </article>
+        <article class="speaker left" id="talk-matt-bromiley">
+          <div class="info">
+            <span>Striking Down Cobalt Strike</span>
+            <span><a href="speakers.html#matt-bromiley">Matt Bromiley</a></span>
+          </div>
+          <p class="whois">
+            Two words can make any defender cringe when they hear them: Cobalt Strike. A popular exploit kit used by red teamers, ransomware attackers, and state-nexus actors alike, Cobalt Strike has become the “tool of choice” for many adversaries. Once entry is gained in a network, Cobalt Strike allows an attacker to exploit, move laterally, and compromise accounts and systems, all via relatively stealthy techniques.
+            <br>
+            However, Cobalt Strike may not be as stealthy as many think. It has telltale signs that, if caught, can stop an adversary in their tracks. In this talk, we will review ways to detect this popular exploit kit, using deep technical analysis of both host- and network-based artifacts. Using what we know about Cobalt Strike's behavior, we'll analyze how to:
+            <br>
+            • Detect process manipulation
+            <br>
+            • Uncover privilege escalation and account abuse
+            <br>
+            • Find lateral movement between systems via host artifacts and network traffic.
+            <br><br>
+            Attendees of this talk will gain insight to effectively detect the use of this exploit kit within their environment. However, despite its popularity, Cobalt Strike's use of techniques is not exclusive - in this talk, we'll learn how to detect all types of adversarial activity. Our analysis takeaways will even include preventative countermeasures that can be implemented today. Even better - red teamers who join will learn how their actions are detected and perhaps find new ways to remain stealthy in their target networks!
           </p>
         </article>
 
